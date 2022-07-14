@@ -1,3 +1,5 @@
+apt update -allow-releaseinfo-change
+apt upgrade -y
 cd /tmp
 apt remove -y docker-hypriot
 wget https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
