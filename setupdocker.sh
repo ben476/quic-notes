@@ -1,5 +1,5 @@
 cd /tmp
-apt remove docker-hypriot
+apt remove -y docker-hypriot
 wget https://download.docker.com/linux/static/stable/aarch64/docker-20.10.9.tgz
 tar xzvf docker-20.10.9.tgz
 cp docker/* /usr/bin/
