@@ -7,8 +7,10 @@ echo "arm_64bit=1" >> /boot/config.txt
 cd /etc/systemd/system
 rm docker.service
 rm docker.socket
-wget https://github.com/moby/moby/raw/master/contrib/init/systemd/docker.service
-wget https://github.com/moby/moby/raw/master/contrib/init/systemd/docker.socket
+wget https://raw.githubusercontent.com/moby/moby/master/contrib/init/systemd/docker.service
+wget https://raw.githubusercontent.com/moby/moby/master/contrib/init/systemd/docker.socket
 systemctl enable docker.service
+cd /lib/systemd/system/
+wget https://github.com/ben476/quic-notes/raw/main/containerd.service
 systemctl enable containerd.service
 reboot
