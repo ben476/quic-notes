@@ -1,4 +1,4 @@
-apt update -allow-releaseinfo-change
+apt update --allow-releaseinfo-change
 apt upgrade -y
 cd /tmp
 apt remove -y docker-hypriot
